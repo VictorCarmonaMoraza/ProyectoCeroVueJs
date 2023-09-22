@@ -8,16 +8,17 @@
 </head>
 <body>
     <div id="myApp">
-    <!-- Directiva de bucles v-for -->
-    <h1>Listado de quotes</h1>
-    <!--Opcion 1-->
-    <!-- <ol>
-        <li v-for="item in quoteslista">{{ item.quote }}</li>
-    </ol> -->
-    <!--Opcion 2-->
-    <ul>
-        <li v-for="item in quotes">{{ item.quote }}</li>
-    </ul>
+        <h1>Hola Mundo</h1>
+        <p>Desde index.html</p>
+        <h3>{{quote}}</h3>
+        <p>{{message}}</p>
+        <blockquote>-{{author}}</blockquote>
+
+
+
+        <button v-on:click="changeQuote">
+            Change quote
+        </button>
     </div>
 
 
