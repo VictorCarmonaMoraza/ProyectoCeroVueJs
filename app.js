@@ -10,6 +10,14 @@ const app = Vue.createApp({
     // <p>{{ true ? 'Activo':'Inactivo' }}</p>
     // <p>Desde app.js</p>
     // `
+
+    data(){
+        return{
+            quote: 'Betis',
+            message:'Victor Developer',
+            author:'Bruce Wayne'
+        }
+    }
 })
 
 app.mount('#myApp')
