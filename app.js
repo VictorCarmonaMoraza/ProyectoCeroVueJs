@@ -17,7 +17,19 @@ const app = Vue.createApp({
             message:'Victor Developer',
             author:'Bruce Wayne'
         }
+    },
+    methods:{
+        changeQuote(event){
+            console.log('Hola Victor desde metodo',event)
+            this.author= 'Pedro'
+            this.capitalize()
+        },
+        capitalize(){
+            this.quote = this.quote.toUpperCase()
+        }
     }
+
+
 })
 
 app.mount('#myApp')
