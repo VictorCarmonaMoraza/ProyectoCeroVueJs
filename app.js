@@ -17,8 +17,21 @@ const app = Vue.createApp({
                //quoteslista:quotes
             //Opcion 2
             quotes,
+            newMensaje:'Hola Victor'
         }
     },
+    methods:{
+        addQuote(){
+            console.log(this.newMensaje)
+           //console.log(event)
+
+            //if(event.charCode!==13) return
+
+            this.quotes.unshift({
+                quote:this.newMensaje
+            })
+        }
+    }
 })
 
 app.mount('#myApp')

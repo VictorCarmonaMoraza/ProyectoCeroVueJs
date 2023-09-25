@@ -9,7 +9,13 @@
 <body>
     <div id="myApp">
     <!-- Directiva de bucles v-for -->
-    <h1>Listado de quotes</h1>
+    <h1>Listado de quotes <small>{{ newMensaje }}</small></h1>
+    <input
+     type="text"
+     v-model="newMensaje"
+     v-on:keypress.enter="addQuote">
+
+    <hr>
     <!--Opcion 1-->
     <ul>
         <li v-for="{quote, author} in quotes">
